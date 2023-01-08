@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Sora';
+    src: url("./assets/fonts/Sora/Sora-Thin.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Sora-bold';
+    src: url("./assets/fonts/Sora/Sora-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url("./assets/fonts/Sora/Sora-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Sora-Medium';
+    src: url('./assets/fonts/Sora/Sora-Medium.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+body {
+    background-image: url('assets/Fundo-Obrigado-Desktop-V2_2x.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-atencao {
+    text-align: center;
+    font-size: 40px;
+    background-image: url('./assets/Grupo-70.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.texto-atencao p {
+    font-family: 'Sora-Bold';
+}
+
+.progress-bar {
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 0 auto;
+    border-radius: 3px;
+}
+
+.progress-bar::before {
+    content: "";
+    width: 50%;
+    background-color: #31C332;
+    border-radius: 3px;
+    animation-name: tamanhoProgressBar;
+    animation-duration: 1.5s;
+}
+
+.progress-bar p {
+    font-size: 12px;
+    margin-top: 16.5px;
+    margin-left: 15px;
+    font-family: 'Sora-Bold';
+    letter-spacing: 0.57px;
+    color: #000;
+    text-transform: uppercase;
+}
+@keyframes tamanhoProgressBar {
+    0% {
+        width: 0;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+.div-texto-inscricao{
+    max-width: 750px;
+    margin-left: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-texto-inscricao p:first-child{
+    font-size: 30px;
+    font-family:'Sora-Bold';
+    text-align: center;
+    padding-top: 30px;
+}
+.div-texto-inscricao p:last-child{
+    font-size: 20px;
+    font-family:'Sora-Regular';
+    text-align: center;
+    padding-top: 30px;
+}
+.div-button {
+    margin: 50px 0;
+}
+.button {
+    font-family: "Sora-Bold", Sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #020B21;
+    background: linear-gradient(79deg, #31C332 0%, #54EE6A 100%);    
+    cursor: pointer;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 50px 20px 50px;
+    transition: 0.7s;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.button:hover {
+    transform: scale(1.04);
+}
+.button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1.5px;
+    margin-right: 6px;
+}
+
+.texto-redirecionamento{
+    display: flex;
+    max-width: 800px;
+    text-align: center;
+    margin: 80px auto 0 auto;
+    align-items: center;
+}
+.texto-redirecionamento p:first-child{
+    font-size: 20px;
+    font-family:'Sora-Bold';
+    color: #CFFF00;
+}
+.texto-redirecionamento div {
+    background-color: #CFFF00;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 15px;
+    animation-name: tamanho;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes tamanho {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    25% {
+        -webkit-transform: scale(1.1);
+        -webkit-box-shadow: 0px 0px 8px 4px rgba(207,255,0,1);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+
+    }
+
+}
+.contagem {
+    font-size: 36px !important;
+    font-family: "Sora-Bold", Sans-serif;
+    color: #000 !important;
+}
+
+footer {
+    padding: 50px 100px;
+    font-size: 12px;
+    background-color: #02081A;
+}
+
+footer p {
+    font-family: 'Sora-Bold';
+    font-size: 12px;
+    text-align: center;
+}
+/* * INICIO RESPONSIVIDADE */ 
+
+@media (max-width: 800px) {
+    main {
+        padding:25px 20px ;
+    }
+    .texto-redirecionamento {
+        flex-direction: column;
+    }
+    .texto-redirecionamento div{
+        margin-top: 25px;
+    }
+    .texto-atencao {
+        font-size: 32px;
+        height: 70px;
+        margin-bottom: 0px;
+
+    }
+    .progress-bar {
+        height: 35px;
+    }
+    .progress-bar p {
+        margin-top: 12.5px;
+    }
+    .div-texto-inscricao p:first-child{
+        font-size: 22px;
+        padding-top: 15px;
+    }
+    .button img{
+        display: none;
+    }
+    .div-button {
+        margin: 25px 0;
+    }
+    .div-texto-inscricao p:last-child{
+        font-size: 16px;
+        padding-top: 15px;
+    }
+    .texto-redirecionamento {
+        margin-top: 25px;
+    }
+    .texto-redirecionamento div {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .texto-atencao {
+        font-size: 22px;
+        height: 36px;
+    }
+}
