@@ -123,8 +123,8 @@ main {
     color: #020B21;
     background: linear-gradient(79deg, #31C332 0%, #54EE6A 100%);    
     cursor: pointer;
-    border-radius: 4px 4px 4px 4px;
-    padding: 20px 50px 20px 50px;
+    border-radius: 4px;
+    padding: 15px 50px;
     transition: 0.7s;
     display: flex;
     text-align: center;
@@ -136,10 +136,10 @@ main {
     transform: scale(1.04);
 }
 .button img {
-    width: 16px;
-    height: 16px;
+    height: 40px;
     margin-bottom: -1.5px;
-    margin-right: 6px;
+    margin-right: 30px;
+    margin-left: -15px;
 }
 
 .texto-redirecionamento{
@@ -233,7 +233,7 @@ footer p {
         padding-top: 15px;
     }
     .button img{
-        display: none;
+        /* display: none; */
     }
     .div-button {
         margin: 25px 0;
