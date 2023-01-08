@@ -16,3 +16,4 @@ const counter = () => {
 }
 
  startCounter()
+a
